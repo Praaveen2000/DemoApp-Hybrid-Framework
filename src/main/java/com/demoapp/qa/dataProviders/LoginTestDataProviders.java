@@ -4,7 +4,7 @@ import org.testng.annotations.DataProvider;
 
 import com.demoapp.qa.utils.Utilities;
 
-public class LoginDataProviders {
+public class LoginTestDataProviders {
 	
 	@DataProvider
 	public Object[][] readValidDataFromExcel()

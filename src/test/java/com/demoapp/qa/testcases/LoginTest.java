@@ -1,12 +1,10 @@
 package com.demoapp.qa.testcases;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
-
 import com.demoapp.qa.baseClass.BaseClass;
-import com.demoapp.qa.dataProviders.LoginDataProviders;
+import com.demoapp.qa.dataProviders.LoginTestDataProviders;
 import com.demoapp.qa.pageObjects.AccountPage;
 import com.demoapp.qa.pageObjects.HomePage;
 import com.demoapp.qa.pageObjects.LoginPage;
@@ -31,7 +29,7 @@ public class LoginTest extends BaseClass {
 		driver.quit();
 	}
 	
-	@Test(priority=1,dataProvider="readValidDataFromExcel", dataProviderClass=LoginDataProviders.class)
+	@Test(priority=1,dataProvider="readValidDataFromExcel", dataProviderClass=LoginTestDataProviders.class)
 	public void loginWithValidCredentials(String email, String password)
 	{
 		AccountPage accountPage = loginPage.enterLoginFields(email, password);
@@ -39,7 +37,7 @@ public class LoginTest extends BaseClass {
 		Assert.assertTrue(accountPage.getDisplayStatusOfAccountInfoHeader(), "Login is not successful");
 	}
 	
-	@Test(priority=2, dataProvider="readInvalidDataFromExcel", dataProviderClass=LoginDataProviders.class)
+	@Test(priority=2, dataProvider="readInvalidDataFromExcel", dataProviderClass=LoginTestDataProviders.class)
 	public void loginWithInvalidCredentials(String email, String password, String warnMsg)
 	{	
 		loginPage.enterLoginFields(email, password);
@@ -48,7 +46,7 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=3, dataProvider ="readInvalidEmailAndValidPassFromExcel", dataProviderClass=LoginDataProviders.class)
+	@Test(priority=3, dataProvider ="readInvalidEmailAndValidPassFromExcel", dataProviderClass=LoginTestDataProviders.class)
 	public void loginWithInvalidEmailAndValidPass(String email, String password, String warnMsg)
 	{	
 		loginPage.enterLoginFields(email, password);
@@ -58,7 +56,7 @@ public class LoginTest extends BaseClass {
 
 
 
-    @Test(priority=4, dataProvider="readValidEmailAndInvalidPassFromExcel", dataProviderClass=LoginDataProviders.class)
+    @Test(priority=4, dataProvider="readValidEmailAndInvalidPassFromExcel", dataProviderClass=LoginTestDataProviders.class)
     public void loginWithValidEmailAndInvalidPass(String email, String password, String warnMsg)
 	{	
     	loginPage.enterLoginFields(email, password);
@@ -67,7 +65,7 @@ public class LoginTest extends BaseClass {
 		
    }
     
-    @Test(priority=5, dataProvider="readBlankDataFromExcel", dataProviderClass=LoginDataProviders.class)
+    @Test(priority=5, dataProvider="readBlankDataFromExcel", dataProviderClass=LoginTestDataProviders.class)
     public void loginWithoutCredentials(String warnMsg)
 	{	
     	loginPage.clickOnLogin();

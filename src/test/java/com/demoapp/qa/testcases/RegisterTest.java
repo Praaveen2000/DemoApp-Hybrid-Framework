@@ -1,6 +1,5 @@
 package com.demoapp.qa.testcases;
 
-import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -8,6 +7,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.demoapp.qa.baseClass.BaseClass;
+import com.demoapp.qa.dataProviders.RegisterTestDataProviders;
 import com.demoapp.qa.pageObjects.AccountSuccessPage;
 import com.demoapp.qa.pageObjects.HomePage;
 import com.demoapp.qa.pageObjects.RegisterPage;
@@ -35,30 +35,30 @@ public class RegisterTest extends BaseClass{
 		driver.quit();
 	}
 	
-	@Test(priority=1)
-	public void registerAccountWithMandatoryFields()
+	@Test(priority=1, dataProvider="readDataFromMandateFieldsReg", dataProviderClass=RegisterTestDataProviders.class)
+	public void registerAccountWithMandatoryFields(String firstName, String lastName, String telePhone, String passWord)
 	{	
-		registerPage.enterMandatoryRegisterFields("Tester", "Test", "tester"+Utilities.TimeStamp()+"@gmail.com", "8333412132", "12345", "12345");
+		registerPage.enterMandatoryRegisterFields(firstName, lastName, Utilities.generateEmailWithTimeStamp(), telePhone, passWord, passWord);
 		
 		accountSuccessPage = registerPage.checkPrivacyAndContinueToAccountSuccessPage();
 				
 		Assert.assertEquals(accountSuccessPage.getAccountSuccessHeaderText(), "Your Account Has Been Created!", "Account is not registered successfully");	
 	}
 	
-	@Test(priority=2)
-	public void registerAccountWithAllFields()
+	@Test(priority=2, dataProvider="readDataFromAllFieldsReg", dataProviderClass=RegisterTestDataProviders.class)
+	public void registerAccountWithAllFields(String firstName, String lastName, String telePhone, String passWord)
 	{	
-		registerPage.enterAllRegisterFields("Tester", "Test", "tester"+Utilities.TimeStamp()+"@gmail.com", "8333412132", "12345", "12345");
+		registerPage.enterAllRegisterFields(firstName, lastName, Utilities.generateEmailWithTimeStamp(), telePhone, passWord, passWord);
 		
 		accountSuccessPage = registerPage.checkPrivacyAndContinueToAccountSuccessPage();
 		
 		Assert.assertEquals(accountSuccessPage.getAccountSuccessHeaderText(), "Your Account Has Been Created!", "Account is not registered successfully");
 	}
 	
-	@Test(priority=3)
-	public void registerAccountWithExistingEmail()
+	@Test(priority=3, dataProvider="readDataFromExistingEmailReg", dataProviderClass=RegisterTestDataProviders.class)
+	public void registerAccountWithExistingEmail(String firstName, String lastName, String email, String telePhone, String passWord)
 	{	
-		registerPage.enterAllRegisterFields("Tester", "Test", "praveenkaverimohan@gmail.com", "8333412132", "12345", "12345");
+		registerPage.enterAllRegisterFields(firstName, lastName, email, telePhone, passWord, passWord);
 		
 		registerPage.checkPrivacyAndContinueToAccountSuccessPage();
 		

@@ -32,6 +32,11 @@ public class Utilities extends BaseClass{
 		return date;
 	}
 	
+	public static String generateEmailWithTimeStamp()
+	{
+		return "tester"+Utilities.TimeStamp()+"@gmail.com";
+	}
+	
 	static XSSFWorkbook workBook;
 	
 	public static Object[][] readDataFromExcel(String sheetName)
