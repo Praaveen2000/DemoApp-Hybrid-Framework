@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoApp Automation Suite">
+	<listeners>
+		<listener class-name="com.demoapp.qa.listeners.TestListeners"/>
+	</listeners>
+  <test name="DemoApp Tests">
+    <classes>
+      <class name="com.demoapp.qa.testcases.RegisterTest"/>
+      <class name="com.demoapp.qa.testcases.SearchTest"/>
+      <class name="com.demoapp.qa.testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

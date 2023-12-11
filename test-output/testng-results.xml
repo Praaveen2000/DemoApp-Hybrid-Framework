@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="11" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-10T19:31:53 IST" name="DemoApp Automation Suite" finished-at="2023-12-10T19:33:37 IST" duration-ms="103924">
+    <groups>
+    </groups>
+    <test started-at="2023-12-10T19:31:53 IST" name="DemoApp Tests" finished-at="2023-12-10T19:33:37 IST" duration-ms="103924">
+      <class name="com.demoapp.qa.testcases.Search">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:33 IST" name="setup" finished-at="2023-12-10T19:32:38 IST" duration-ms="5012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithValidProduct()[pri:1, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:38 IST" name="searchWithValidProduct" finished-at="2023-12-10T19:32:39 IST" duration-ms="1760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:39 IST" name="tearDown" finished-at="2023-12-10T19:32:40 IST" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:40 IST" name="setup" finished-at="2023-12-10T19:32:46 IST" duration-ms="6087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchWithInValidProduct()[pri:2, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:46 IST" name="searchWithInValidProduct" finished-at="2023-12-10T19:32:47 IST" duration-ms="1427" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Warning message not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Warning message not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.demoapp.qa.testcases.Search.searchWithInValidProduct(Search.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithInValidProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:48 IST" name="tearDown" finished-at="2023-12-10T19:32:48 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="searchWithBlankValue()[pri:3, instance:com.demoapp.qa.testcases.Search@1750fbeb]" started-at="2023-12-10T19:32:48 IST" name="searchWithBlankValue" finished-at="2023-12-10T19:32:48 IST" depends-on-methods="com.demoapp.qa.testcases.Search.searchWithInValidProduct" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.demoapp.qa.testcases.Search.searchWithBlankValue() on instance com.demoapp.qa.testcases.Search@1750fbeb depends on not successfully finished methods 
+[com.demoapp.qa.testcases.Search.searchWithInValidProduct() on instance com.demoapp.qa.testcases.Search@1750fbeb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.demoapp.qa.testcases.Search.searchWithBlankValue() on instance com.demoapp.qa.testcases.Search@1750fbeb depends on not successfully finished methods 
+[com.demoapp.qa.testcases.Search.searchWithInValidProduct() on instance com.demoapp.qa.testcases.Search@1750fbeb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchWithBlankValue -->
+      </class> <!-- com.demoapp.qa.testcases.Search -->
+      <class name="com.demoapp.qa.testcases.Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:32:49 IST" name="setup" finished-at="2023-12-10T19:32:55 IST" duration-ms="6690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:32:55 IST" name="loginWithValidCredentials" data-provider="readValidDataFromExcel" finished-at="2023-12-10T19:32:56 IST" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[praveenkaverimohan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:32:57 IST" name="tearDown" finished-at="2023-12-10T19:32:57 IST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:32:57 IST" name="setup" finished-at="2023-12-10T19:33:04 IST" duration-ms="7034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:04 IST" name="loginWithValidCredentials" data-provider="readValidDataFromExcel" finished-at="2023-12-10T19:33:05 IST" duration-ms="935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tester123@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:05 IST" name="tearDown" finished-at="2023-12-10T19:33:05 IST" duration-ms="339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:05 IST" name="setup" finished-at="2023-12-10T19:33:12 IST" duration-ms="6675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInvalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:12 IST" name="loginWithInvalidCredentials" data-provider="readInvalidDataFromExcel" finished-at="2023-12-10T19:33:13 IST" duration-ms="636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:13 IST" name="tearDown" finished-at="2023-12-10T19:33:13 IST" duration-ms="217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:13 IST" name="setup" finished-at="2023-12-10T19:33:21 IST" duration-ms="7545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithInvalidEmailAndValidPass(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:21 IST" name="loginWithInvalidEmailAndValidPass" data-provider="readInvalidEmailAndValidPassFromExcel" finished-at="2023-12-10T19:33:21 IST" duration-ms="594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidEmailAndValidPass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:21 IST" name="tearDown" finished-at="2023-12-10T19:33:22 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:22 IST" name="setup" finished-at="2023-12-10T19:33:28 IST" duration-ms="6574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithValidEmailAndInvalidPass(java.lang.String,java.lang.String,java.lang.String)[pri:4, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:28 IST" name="loginWithValidEmailAndInvalidPass" data-provider="readValidEmailAndInvalidPassFromExcel" finished-at="2023-12-10T19:33:29 IST" duration-ms="784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[praveenkaverimohan@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidEmailAndInvalidPass -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:29 IST" name="tearDown" finished-at="2023-12-10T19:33:29 IST" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:29 IST" name="setup" finished-at="2023-12-10T19:33:36 IST" duration-ms="6761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginWithoutCredentials(java.lang.String)[pri:5, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:36 IST" name="loginWithoutCredentials" data-provider="readBlankDataFromExcel" finished-at="2023-12-10T19:33:37 IST" duration-ms="523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Warning: No match for E-Mail Address and/or Password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithoutCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Login@5b247367]" started-at="2023-12-10T19:33:37 IST" name="tearDown" finished-at="2023-12-10T19:33:37 IST" duration-ms="233" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoapp.qa.testcases.Login -->
+      <class name="com.demoapp.qa.testcases.Register">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:31:54 IST" name="setup" finished-at="2023-12-10T19:32:04 IST" duration-ms="9908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAccountWithMandatoryFields()[pri:1, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:04 IST" name="registerAccountWithMandatoryFields" finished-at="2023-12-10T19:32:05 IST" duration-ms="1396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithMandatoryFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:05 IST" name="tearDown" finished-at="2023-12-10T19:32:05 IST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:05 IST" name="setup" finished-at="2023-12-10T19:32:13 IST" duration-ms="7215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAccountWithAllFields()[pri:2, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:13 IST" name="registerAccountWithAllFields" finished-at="2023-12-10T19:32:14 IST" duration-ms="1373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithAllFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:14 IST" name="tearDown" finished-at="2023-12-10T19:32:14 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:14 IST" name="setup" finished-at="2023-12-10T19:32:22 IST" duration-ms="7805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAccountWithExistingEmail()[pri:3, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:22 IST" name="registerAccountWithExistingEmail" finished-at="2023-12-10T19:32:23 IST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithExistingEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:23 IST" name="tearDown" finished-at="2023-12-10T19:32:24 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:24 IST" name="setup" finished-at="2023-12-10T19:32:32 IST" duration-ms="7978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="registerAccountWithoutFillingAnyFields()[pri:4, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:32 IST" name="registerAccountWithoutFillingAnyFields" finished-at="2023-12-10T19:32:32 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerAccountWithoutFillingAnyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoapp.qa.testcases.Register@53045c6c]" started-at="2023-12-10T19:32:32 IST" name="tearDown" finished-at="2023-12-10T19:32:33 IST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoapp.qa.testcases.Register -->
+    </test> <!-- DemoApp Tests -->
+  </suite> <!-- DemoApp Automation Suite -->
+</testng-results>
