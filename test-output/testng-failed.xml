@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="DemoApp Tests(failed)">
     <classes>
-      <class name="com.demoapp.qa.testcases.Search">
+      <class name="com.demoapp.qa.testcases.SearchTest">
         <methods>
           <include name="tearDown"/>
+          <include name="setup"/>
           <include name="searchWithBlankValue"/>
           <include name="searchWithInValidProduct"/>
-          <include name="setup"/>
         </methods>
-      </class> <!-- com.demoapp.qa.testcases.Search -->
+      </class> <!-- com.demoapp.qa.testcases.SearchTest -->
     </classes>
   </test> <!-- DemoApp Tests(failed) -->
 </suite> <!-- Failed suite [DemoApp Automation Suite] -->
