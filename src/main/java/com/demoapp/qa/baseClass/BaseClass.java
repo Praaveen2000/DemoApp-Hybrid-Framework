@@ -56,13 +56,13 @@ public class BaseClass {
 		
 		if(browserName.equalsIgnoreCase("Chrome"))
 		{
-			ChromeOptions opt = new ChromeOptions();
+			ChromeOptions options = new ChromeOptions();
 			
-			opt.addArguments("--headless=new");
+			options.addArguments("--headless=new");
 			
-			opt.addArguments("--no-sandbox");
+			options.addArguments("--no-sandbox");
 			
-			driver = new ChromeDriver(opt);
+			driver = new ChromeDriver(options);
 			
 			
 		}
