@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -54,14 +55,35 @@ public class BaseClass {
 	public WebDriver SetupBrowser(String browserName) {
 		
 		if(browserName.equalsIgnoreCase("Chrome"))
-			driver = new ChromeDriver();
+		{
+			ChromeOptions opt = new ChromeOptions();
+			
+			opt.addArguments("--headless=new");
+			
+			opt.addArguments("--no-sandbox");
+			
+			driver = new ChromeDriver(opt);
+			
+			
+		}
 		else if(browserName.equalsIgnoreCase("Edge"))
+		{
 			driver = new EdgeDriver();
+			
+			
+		}
 		else if(browserName.equalsIgnoreCase("Firefox"))
+		{
 			driver = new FirefoxDriver();
+			
+			
+		}
 		else if(browserName.equalsIgnoreCase("Safari"))
+		{
 			driver = new SafariDriver();
 			
+			
+		}	
 		driver.manage().window().maximize();
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Utilities.IMP_WAIT_TIME));
